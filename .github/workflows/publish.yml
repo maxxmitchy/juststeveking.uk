@@ -3,6 +3,7 @@ name: Publish Posts
 on:
   schedule:
     - cron: "0 8-22 * * *"
+  push:
 
 jobs:
   automerge:
