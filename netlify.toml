@@ -7,3 +7,10 @@
 [context.production]
     command="npm run prod"
     publish="build_production"
+
+[[redirects]]
+    from = "/youtube/*"
+    to = "https://www.youtube.com/c/JustSteveKing/videos"
+    status = 200
+      force = true # COMMENT: ensure that we always redirect
+      headers = {X-From = "Netlify"}
