@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
     <title></title>
-    <link>http://localhost:8000</link>
+    <link>https://www.juststeveking.uk/</link>
     <description><![CDATA[]]></description>
-    <atom:link href="http://localhost:8000/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.juststeveking.uk/rss.xml" rel="self" type="application/rss+xml" />
     <language></language>
-    <lastBuildDate>2022-04-21 12:19:13</lastBuildDate>
+    <lastBuildDate>2022-04-21 12:48:54</lastBuildDate>
 
         <item>
         <title><![CDATA[Quick Look into Laravel Feature Flags]]></title>
-        <link>http://localhost:8000/quick-look-into-laravel-feature-flags</link>
-        <guid isPermaLink="true">http://localhost:8000/quick-look-into-laravel-feature-flags</guid>
+        <link>https://www.juststeveking.uk/quick-look-into-laravel-feature-flags</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/quick-look-into-laravel-feature-flags</guid>
         <description><![CDATA[Lets have a quick look into my latest package Laravel Feature Flags.]]></description>
         <content:encoded><![CDATA[<p>Not that long ago I published my latest package, <a href="https://github.com/JustSteveKing/laravel-feature-flags">Laravel Feature Flags</a>, which is a simple to use feature flag implementation for Laravel.</p>
 
@@ -68,15 +68,15 @@
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000https://raw.githubusercontent.com/JustSteveKing/laravel-feature-flags/main/banner.png"
+                url="https://www.juststeveking.uk/https://raw.githubusercontent.com/JustSteveKing/laravel-feature-flags/main/banner.png"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Introducing - Laravel Transporter]]></title>
-        <link>http://localhost:8000/introducing-laravel-transporter</link>
-        <guid isPermaLink="true">http://localhost:8000/introducing-laravel-transporter</guid>
+        <link>https://www.juststeveking.uk/introducing-laravel-transporter</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/introducing-laravel-transporter</guid>
         <description><![CDATA[Introducing Laravel Transporter, an object oriented way to send API requests in Laravel.]]></description>
         <content:encoded><![CDATA[<p>Sending API requests in any PHP framework has always been a little bit of a manual process, yes you can create an SDK or wrapper - but you are still having to do the same thing.</p>
 
@@ -155,15 +155,15 @@
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/photo-1501532358732-8b50b34df1c4.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/photo-1501532358732-8b50b34df1c4.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Working with third party services in Laravel]]></title>
-        <link>http://localhost:8000/working-with-third-party-services-in-laravel</link>
-        <guid isPermaLink="true">http://localhost:8000/working-with-third-party-services-in-laravel</guid>
+        <link>https://www.juststeveking.uk/working-with-third-party-services-in-laravel</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/working-with-third-party-services-in-laravel</guid>
         <description><![CDATA[There are many ways to work with 3rd party services in Laravel, here is how I do it. I will walk through setting up a service to connect to the PingPing service]]></description>
         <content:encoded><![CDATA[<p>I have been working with 3rd party APIs for longer than I care to admit, over
 time I have found a few ways that work nicely for me. In particular when
@@ -297,15 +297,15 @@ By following a standard, you know how your projects work from one to another.</p
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/screenshot-2021-04-30-at-12.13.48.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/screenshot-2021-04-30-at-12.13.48.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Adventures in PHP - PHP SDK Builder]]></title>
-        <link>http://localhost:8000/adventures-in-php-php-sdk-builder</link>
-        <guid isPermaLink="true">http://localhost:8000/adventures-in-php-php-sdk-builder</guid>
+        <link>https://www.juststeveking.uk/adventures-in-php-php-sdk-builder</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/adventures-in-php-php-sdk-builder</guid>
         <description><![CDATA[Over the years I have built a lot of SDKs to work with 3rd party APIs. Each time I require the same components, so I decided to create a way to bootstrap this process while still allowing flexibility]]></description>
         <content:encoded><![CDATA[<p>I have been working with 3rd party APIs for a very long time. Each time I
 usually either pull in their SDK, if there is one available, or I build a
@@ -351,15 +351,15 @@ par - or I simple wanted to do it my way.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/open-graph-card.png"
+                url="https://www.juststeveking.uk//assets/images/open-graph-card.png"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Adventures in PHP - PHP URI Builder]]></title>
-        <link>http://localhost:8000/adventures-in-php-php-uri-builder</link>
-        <guid isPermaLink="true">http://localhost:8000/adventures-in-php-php-uri-builder</guid>
+        <link>https://www.juststeveking.uk/adventures-in-php-php-uri-builder</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/adventures-in-php-php-uri-builder</guid>
         <description><![CDATA[In PHP you can easily build a URL by concatenating strings, and iterate that process nicely. However, I hate this approach. It doesn't feel true to OOP, and it definitely isn't testable]]></description>
         <content:encoded><![CDATA[<p>I would like to announce my latest package <em>uri-builder</em> which is a fluent
 interface for building a URI string. Now, it might sound simple - and you
@@ -407,15 +407,15 @@ might wonder why did I build this. So without further ado, let me explain:</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/uri-builder.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/uri-builder.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[PHP Online - The Story So Far]]></title>
-        <link>http://localhost:8000/phponline-the-story-so-far</link>
-        <guid isPermaLink="true">http://localhost:8000/phponline-the-story-so-far</guid>
+        <link>https://www.juststeveking.uk/phponline-the-story-so-far</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/phponline-the-story-so-far</guid>
         <description><![CDATA[I have been working on community projects now for the past 3-4 years, and in that time I have noticed something. PHP Online is my answer to what I think the community needs.]]></description>
         <content:encoded><![CDATA[<p>PHP Online started as an idea, an inspiration, a way to give back. For years now I have been involved in the community: contributing to open source, mentoring others, starting user groups, organising conferences, speaking at events. All of these things are extremely rewarding, and I would recommend it to anybody looking to get involved more in the community.</p>
 
@@ -436,15 +436,15 @@ might wonder why did I build this. So without further ado, let me explain:</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/phponline.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/phponline.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Building a REST API in GoLang - Part 1]]></title>
-        <link>http://localhost:8000/building-a-rest-api-in-golang-part-1</link>
-        <guid isPermaLink="true">http://localhost:8000/building-a-rest-api-in-golang-part-1</guid>
+        <link>https://www.juststeveking.uk/building-a-rest-api-in-golang-part-1</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/building-a-rest-api-in-golang-part-1</guid>
         <description><![CDATA[I have been building APIs for production environments for many years now, predominently in PHP. The last 3 years however, I have been hard at work getting to grips with GoLang - so I thought I would change the pace and share a post on GoLang]]></description>
         <content:encoded><![CDATA[<p>I have been building APIs for production environments for many years now,
 predominently in PHP. The last 3 years however, I have been hard at work
@@ -563,15 +563,15 @@ a post on GoLang.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/go-lang.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/go-lang.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[My First Go Module - go api problem]]></title>
-        <link>http://localhost:8000/my-first-go-module-go-api-problem</link>
-        <guid isPermaLink="true">http://localhost:8000/my-first-go-module-go-api-problem</guid>
+        <link>https://www.juststeveking.uk/my-first-go-module-go-api-problem</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/my-first-go-module-go-api-problem</guid>
         <description><![CDATA[Recently I have been playing with GoLang quite a lot, so I decided to try my hand at publishing my first Go Module to handle errors nicely in an API.]]></description>
         <content:encoded><![CDATA[<p>I have been playing with GoLang on and off now for around 3 years, but never
 really had chance to use it the way I wanted to. However, recently with a new
@@ -613,15 +613,15 @@ distributed warehouse system. This was the moment I was waiting for.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/romson-preechawit-vy2chqm0mcs-unsplash.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/romson-preechawit-vy2chqm0mcs-unsplash.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Embracing The Tall Stack with Event Sourcing, an adventure into the unknown]]></title>
-        <link>http://localhost:8000/embracing-the-tall-stack-with-event-sourcing-an-adventure-into-the-unknown</link>
-        <guid isPermaLink="true">http://localhost:8000/embracing-the-tall-stack-with-event-sourcing-an-adventure-into-the-unknown</guid>
+        <link>https://www.juststeveking.uk/embracing-the-tall-stack-with-event-sourcing-an-adventure-into-the-unknown</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/embracing-the-tall-stack-with-event-sourcing-an-adventure-into-the-unknown</guid>
         <description><![CDATA[TALL stack is growing in popularity in the Laravel community, and rightly so. The way in which you can write beautiful code split into reactive components without ever having to leave PHP is a no brainer. Recently the TALL stack preset was released, which on its own is fantastic - but I wanted to take it one step further.]]></description>
         <content:encoded><![CDATA[<p>TALL stack is growing in popularity in the Laravel community, and rightly so.
 The way in which you can write beautiful code split into reactive components
@@ -701,15 +701,15 @@ one step further.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/terry-vlisidis-wsebnsnkbue-unsplash.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/terry-vlisidis-wsebnsnkbue-unsplash.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Embracing PSRs to build an interoperable Http Client]]></title>
-        <link>http://localhost:8000/embracing-psrs-to-build-an-interoperable-http-client</link>
-        <guid isPermaLink="true">http://localhost:8000/embracing-psrs-to-build-an-interoperable-http-client</guid>
+        <link>https://www.juststeveking.uk/embracing-psrs-to-build-an-interoperable-http-client</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/embracing-psrs-to-build-an-interoperable-http-client</guid>
         <description><![CDATA[Recently I have been scratching my head over PSR-18. As a new PSR there isn't a lot of information around it, but I saw that as a challenge. I decided to accept this challenge and build a compliant HTTP client to embrace the future of interoperability.]]></description>
         <content:encoded><![CDATA[<p>Recently I have been scratching my head over PSR-18. As a new PSR there isn't
 a lot of information around it, but I saw that as a challenge. I decided to
@@ -737,15 +737,15 @@ of interoperability.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/christian-fregnan-tavkurx-xlw-unsplash.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/christian-fregnan-tavkurx-xlw-unsplash.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[An adventure with Graph Databases]]></title>
-        <link>http://localhost:8000/an-adventure-with-graph-databases</link>
-        <guid isPermaLink="true">http://localhost:8000/an-adventure-with-graph-databases</guid>
+        <link>https://www.juststeveking.uk/an-adventure-with-graph-databases</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/an-adventure-with-graph-databases</guid>
         <description><![CDATA[Recently I have been super interested in graph databases, most specifically neo4j. However, there was no official packages for PHP that were still active. I decided to change that.]]></description>
         <content:encoded><![CDATA[<p>From code to node, was the idea I wanted to accomplish when I first started
 designing some open source packages 4 days ago. <a href="https://neo4j.com/">neo4j</a> is
@@ -775,15 +775,15 @@ database, if there is no package available!</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/leone-venter-mtkxssscrzw-unsplash.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/leone-venter-mtkxssscrzw-unsplash.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[ParameterBag - My latest open source package]]></title>
-        <link>http://localhost:8000/parameterbag-my-latest-open-source-package</link>
-        <guid isPermaLink="true">http://localhost:8000/parameterbag-my-latest-open-source-package</guid>
+        <link>https://www.juststeveking.uk/parameterbag-my-latest-open-source-package</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/parameterbag-my-latest-open-source-package</guid>
         <description><![CDATA[Introducing my latest PHP Package: ParamterBag - A flexible parameter bag in place of standard arrays on PHP classes.]]></description>
         <content:encoded><![CDATA[<p>Every now and then you find youself writing the same bit of code in many
 places, sometimes it's a simple trait or even an interface. For me it is a way
@@ -823,15 +823,15 @@ use (aka not updated in over 3 years).</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/jed-owen-ppzbe1hwegi-unsplash.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/jed-owen-ppzbe1hwegi-unsplash.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[Slim4 - A lightweight breath of fresh air]]></title>
-        <link>http://localhost:8000/slim4-a-lightweight-breath-of-fresh-air</link>
-        <guid isPermaLink="true">http://localhost:8000/slim4-a-lightweight-breath-of-fresh-air</guid>
+        <link>https://www.juststeveking.uk/slim4-a-lightweight-breath-of-fresh-air</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/slim4-a-lightweight-breath-of-fresh-air</guid>
         <description><![CDATA[As a PHP developer I use Laravel quite heavily, but I have been a long time user of SlimPHP. The latest version of Slim has inspired me to use it more often.]]></description>
         <content:encoded><![CDATA[<p>My first introduction into frameworks in the PHP world started with the <a href="http://www.slimframework.com/">Slim
 Framework</a> and I fell in love instantly, this
@@ -854,15 +854,15 @@ appealing.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000/assets/images/uploads/dallas-reedy-nejfas1okho-unsplash.webp"
+                url="https://www.juststeveking.uk//assets/images/uploads/dallas-reedy-nejfas1okho-unsplash.webp"
                 type="image/jpeg"
                 width="150"
                 height="150" />
             </item>
         <item>
         <title><![CDATA[New Blog]]></title>
-        <link>http://localhost:8000/new-blog</link>
-        <guid isPermaLink="true">http://localhost:8000/new-blog</guid>
+        <link>https://www.juststeveking.uk/new-blog</link>
+        <guid isPermaLink="true">https://www.juststeveking.uk/new-blog</guid>
         <description><![CDATA[New year new blog, concentrating on my personal blog.]]></description>
         <content:encoded><![CDATA[<p>So I have decided that I will be concentrating my blogging time to a personal
 blog instead of my company blog this year, for several reasons. My company
@@ -877,7 +877,7 @@ quite constrained in what I can write about.</p>
 
                 <media:content
                 medium="image"
-                url="http://localhost:8000https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                url="https://www.juststeveking.uk/https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
                 type="image/jpeg"
                 width="150"
                 height="150" />
