@@ -1,5 +1,5 @@
 [build]
-    environment = { PHP_VERSION = "7.2" }
+    environment = { PHP_VERSION = "7.4" }
 
     command = "npm run staging"
     publish = "build_staging"
