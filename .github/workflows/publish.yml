@@ -9,14 +9,7 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: automerge
-        uses: "pascalgn/automerge-action@75ca70eb25b33837664f25d6270d20b629d23614"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
-          MERGE_LABELS: "finished"
-
       - name: scheduled-deploy
-        if: github.event_name == 'schedule'
         uses: wei/curl@master
         with:
           args: -X POST -d {} "${{ secrets.NETLIFY_BUILD_HOOK }}"
