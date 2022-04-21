@@ -13,6 +13,6 @@ $events->afterBuild([
 ]);
 
 TorchlightExtension::make(
-    container: $container,
-    events: $events,
+    $container,
+    $events,
 )->boot();
