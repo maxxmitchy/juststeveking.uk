@@ -5,5 +5,5 @@
     publish = "build_staging"
 
 [context.production]
-    command="npm run production"
+    command="npm run prod"
     publish="build_production"
