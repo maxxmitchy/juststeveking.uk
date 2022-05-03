@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Laravel DDD - Querying Records in our Domain
-date: 2022-05-03T11:59:40.513Z
+date: 2022-05-03T12:45:40.513Z
 description: >-
   In the last instalment we spoke about using a simplified version of the CQRS pattern to create commands. This time we are going to talk about the other side to this and talk about queries.
 tags:

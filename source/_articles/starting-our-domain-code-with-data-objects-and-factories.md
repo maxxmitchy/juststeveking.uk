@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Laravel DDD - Starting our Domain Code; Data Objects and Factories
-date: 2022-05-03T11:59:40.513Z
+date: 2022-05-03T12:00:40.513Z
 description: >-
   This article is taking that next step, creating our domain code. We will being this part of the journey by creating data objects and data object factories. But before that, let's talk about what these are, and why we would use them.
 tags:
