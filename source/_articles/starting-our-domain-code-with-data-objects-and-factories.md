@@ -89,9 +89,7 @@ class PostDataObjectFactory
 {
     public function make(array $attributes): PostDataObject
     {
-        $publishedAt = $request->get('published')
-            ? $request->get('published_at', now())
-            : null;
+        $publishedAt = data_get($attributes, 'published') ?? now();
 
         return new PostDataObject(
             title: (string) data_get($attributes, 'title'),

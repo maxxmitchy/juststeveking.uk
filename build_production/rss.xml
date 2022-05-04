@@ -6,7 +6,7 @@
     <description><![CDATA[]]></description>
     <atom:link href="https://www.juststeveking.uk/rss.xml" rel="self" type="application/rss+xml" />
     <language></language>
-    <lastBuildDate>2022-05-04 07:24:29</lastBuildDate>
+    <lastBuildDate>2022-05-04 08:54:48</lastBuildDate>
 
         <item>
         <title><![CDATA[Laravel DDD - Querying Records in our Domain]]></title>
@@ -50,7 +50,7 @@
 <p>In the above example we have an invokable controller that has one URL parameter slug which we can use to pass through to our Query and fetch the single record. We can then use this to return a Post Resource using the correct Post with a HTTP status OK (200).</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -125,7 +125,7 @@
 <p>We then build up our data object, send it through to our command, and pass this instance through to a a JSON Response using a Laravel Resource. Some very simple steps we would be very used to taking in our controllers, but the benefit is that each injected class is interoperable through the container, and each part can be testing in isolation nicely as well as testing the controller in a Feature test.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -175,14 +175,14 @@
 
 <p>So how would this factory actually work? What would be the best way to create this?</p>
 
-<pre><code data-theme="material-theme-palenight" data-lang="php" class='language-php torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 1</span><span style="color: #89DDFF;">&lt;?php</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 2</span>&nbsp;</div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 3</span><span style="color: #89DDFF;">declare</span><span style="color: #89DDFF;">(</span><span style="color: #A6ACCD;">strict_types</span><span style="color: #89DDFF;">=</span><span style="color: #F78C6C;">1</span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 4</span>&nbsp;</div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 5</span><span style="color: #C792EA;">class</span><span style="color: #A6ACCD;"> </span><span style="color: #FFCB6B;">PostDataObjectFactory</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 6</span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 7</span><span style="color: #A6ACCD;">    </span><span style="color: #C792EA;">public</span><span style="color: #A6ACCD;"> </span><span style="color: #C792EA;">function</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">make</span><span style="color: #89DDFF;">(</span><span style="color: #F78C6C;">array</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">):</span><span style="color: #A6ACCD;"> </span><span style="color: #FFCB6B;">PostDataObject</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 8</span><span style="color: #A6ACCD;">    </span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 9</span><span style="color: #A6ACCD;">        </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">publishedAt </span><span style="color: #89DDFF;">=</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">request</span><span style="color: #89DDFF;">-&gt;</span><span style="color: #82AAFF;">get</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">published</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">10</span><span style="color: #A6ACCD;">            </span><span style="color: #89DDFF;">?</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">request</span><span style="color: #89DDFF;">-&gt;</span><span style="color: #82AAFF;">get</span><span style="color: #89DDFF;">(</span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">published_at</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">now</span><span style="color: #89DDFF;">())</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">11</span><span style="color: #A6ACCD;">            </span><span style="color: #89DDFF;">:</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">null;</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">12</span>&nbsp;</div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">13</span><span style="color: #A6ACCD;">        </span><span style="color: #89DDFF;">return</span><span style="color: #A6ACCD;"> </span><span style="color: #F78C6C;">new</span><span style="color: #A6ACCD;"> </span><span style="color: #FFCB6B;">PostDataObject</span><span style="color: #89DDFF;">(</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">14</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">title</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">(</span><span style="color: #C792EA;">string</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">title</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">),</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">15</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">content</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">(</span><span style="color: #C792EA;">string</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">content</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">),</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">16</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">published</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">(</span><span style="color: #C792EA;">bool</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">published</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">),</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">17</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">publishedAt</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">publishedAt</span><span style="color: #89DDFF;">,</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">18</span><span style="color: #A6ACCD;">        </span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">19</span><span style="color: #A6ACCD;">    </span><span style="color: #89DDFF;">}</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">20</span><span style="color: #89DDFF;">}</span></div></code></pre>
+<pre><code data-theme="material-theme-palenight" data-lang="php" class='language-php torchlight' style='background-color: #292D3E; --theme-selection-background: #00000080;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 1</span><span style="color: #89DDFF;">&lt;?php</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 2</span>&nbsp;</div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 3</span><span style="color: #89DDFF;">declare</span><span style="color: #89DDFF;">(</span><span style="color: #A6ACCD;">strict_types</span><span style="color: #89DDFF;">=</span><span style="color: #F78C6C;">1</span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 4</span>&nbsp;</div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 5</span><span style="color: #C792EA;">class</span><span style="color: #A6ACCD;"> </span><span style="color: #FFCB6B;">PostDataObjectFactory</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 6</span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 7</span><span style="color: #A6ACCD;">    </span><span style="color: #C792EA;">public</span><span style="color: #A6ACCD;"> </span><span style="color: #C792EA;">function</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">make</span><span style="color: #89DDFF;">(</span><span style="color: #F78C6C;">array</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">):</span><span style="color: #A6ACCD;"> </span><span style="color: #FFCB6B;">PostDataObject</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 8</span><span style="color: #A6ACCD;">    </span><span style="color: #89DDFF;">{</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number"> 9</span><span style="color: #A6ACCD;">        </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">publishedAt </span><span style="color: #89DDFF;">=</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">published</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">??</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">now</span><span style="color: #89DDFF;">();</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">10</span>&nbsp;</div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">11</span><span style="color: #A6ACCD;">        </span><span style="color: #89DDFF;">return</span><span style="color: #A6ACCD;"> </span><span style="color: #F78C6C;">new</span><span style="color: #A6ACCD;"> </span><span style="color: #FFCB6B;">PostDataObject</span><span style="color: #89DDFF;">(</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">12</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">title</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">(</span><span style="color: #C792EA;">string</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">title</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">),</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">13</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">content</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">(</span><span style="color: #C792EA;">string</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">content</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">),</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">14</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">published</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">(</span><span style="color: #C792EA;">bool</span><span style="color: #89DDFF;">)</span><span style="color: #A6ACCD;"> </span><span style="color: #82AAFF;">data_get</span><span style="color: #89DDFF;">($</span><span style="color: #A6ACCD;">attributes</span><span style="color: #89DDFF;">,</span><span style="color: #A6ACCD;"> </span><span style="color: #89DDFF;">&#39;</span><span style="color: #C3E88D;">published</span><span style="color: #89DDFF;">&#39;</span><span style="color: #89DDFF;">),</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">15</span><span style="color: #A6ACCD;">            </span><span style="color: #FFCB6B;">publishedAt</span><span style="color: #A6ACCD;">: </span><span style="color: #89DDFF;">$</span><span style="color: #A6ACCD;">publishedAt</span><span style="color: #89DDFF;">,</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">16</span><span style="color: #A6ACCD;">        </span><span style="color: #89DDFF;">);</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">17</span><span style="color: #A6ACCD;">    </span><span style="color: #89DDFF;">}</span></div><div class='line'><span style="color:#3A3F58; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">18</span><span style="color: #89DDFF;">}</span></div></code></pre>
 
 <p>All of our conditional logic for setting the published at property is encapsulated - allowing us to make changes as required in one place and have it effect all other instances easily.</p>
 
 <p>There is no other need for this factory, it is there simply to create an object in a blueprinted way over and over again. In the example above I use the laravel helper <code>data_get</code> to simply allow me to recursively get items from a section of an array using dot notation if the key value is stored a few levels deep.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -227,7 +227,7 @@
 <p>Now that we have our domains being loaded through composer, and our Laravel application is aware of the service providers for each domain - we are ready to write actual domain code.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -292,7 +292,7 @@
 <p>I'd love to get some more feedback on this package, so feel free to <a href="https://github.com/JustSteveKing/laravel-feature-flags">check it out on GitHub</a> and drop me any issues if you think there could be improvements or anything added!</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -379,7 +379,7 @@
 <p>Thanks for reading, I welcome any feedback that may assist in pushing this package forward and making it easier to use! Feel free to start a discussion or open an issue on the <a href="https://github.com/JustSteveKing/laravel-transporter">GitHub Repository</a> or even drop me a tweet/DM on <a href="https://twitter.com/JustSteveKing">twitter</a>.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -521,7 +521,7 @@ By following a standard, you know how your projects work from one to another.</p
 <p>If you enjoyed this article, why not let me know on twitter <a href="https://twitter.com/JustSteveKing">@JustSteveKing</a> or checkout the repo for this tutorial on <a href="https://github.com/JustSteveKing/laravel-api-service-tutorial">GitHub</a></p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -575,7 +575,7 @@ par - or I simple wanted to do it my way.</p>
 <p>The key takeaway from this library that I am building, is standards and interoperability. When building a library that will allow others to integrate with your API or service, you do not want to enforce anything beyond what you absolitely have to. The only requirements for using this package is PHP7.4, then PSR implementation libraries. Meaning that if you use this library to create your own SDK, you can either define what implementations you want to use or allow the person using your SDK to provide their own.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -631,7 +631,7 @@ might wonder why did I build this. So without further ado, let me explain:</p>
 <p>As you can see these pieces that make up our URI are very easily mutated and changed as needed. There is no need for immutable behaviour here - the purpose of this library is to allow you to build and change URIs as and when you need - even if it is the same instance.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -660,7 +660,7 @@ might wonder why did I build this. So without further ado, let me explain:</p>
 <p>If you are reading this, and it interests you - I would love to hear your thoughts on the project! Feel free to reach out on <a href="https://twitter.com/JustSteveKing">twitter</a> or join us on the <a href="https://discord.gg/gfvuH9B">community discord</a>!</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -787,7 +787,7 @@ a post on GoLang.</p>
 <p>I'd love some feedback, or even recommendations! You can reach out to me on twitter at <strong>@JustSteveKing</strong> where I am always happy to take some constructive feedback. This will eventually be pushed up to GitHub also (same handle as twitter) so please feel free to follow me on there also, if you would like to see the finished code.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -837,7 +837,7 @@ distributed warehouse system. This was the moment I was waiting for.</p>
 <p>So for my first Go Module, it was pretty simple - but it solved a problem I knew I was going to face! Feel free to check out the source code and install instructions on the <a href="https://github.com/JustSteveKing/go-api-problem">GitHub Repository</a></p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -925,7 +925,7 @@ one step further.</p>
 <p>Thanks for reading! Why not drop me a tweet with your thoughts?</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -961,7 +961,7 @@ of interoperability.</p>
 <p>This is just one adventure into embracing PSRs, but I have thoroughly enjoyed it so far! Please drop me a tweet if you have found this useful at all, or if you find an issue - feel free to drop an issue on the <a href="https://github.com/JustSteveKing/http-slim">GitHub repo</a></p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -999,7 +999,7 @@ database, if there is no package available!</p>
 <p><img src="/assets/images/uploads/neo4j-querying.webp" alt="please see the http adapter README, which has a full example" title="All the packages!" /></p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -1047,7 +1047,7 @@ use (aka not updated in over 3 years).</p>
 <p>As I said, this isn't the most ground breaking package to be published - but it has already proven itself useful in my day to day - and it has already saved me time in writing this logic in any project again. Hooray for open source!</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -1078,7 +1078,7 @@ appealing.</p>
 <p>In future articles I will be building up a new Slim application using Slim 4, using something other than MVC - stay tuned for more!</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
@@ -1101,7 +1101,7 @@ quite constrained in what I can write about.</p>
 <p>So this blog is about all the things I wish to write about, mostly technical, and gives me a channel to get some thoughts out of my head and onto a markdown file that I can revisit later on.</p>
 ]]></content:encoded>
         <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve McDougall</dc:creator>
-        <pubDate>Wed, 04 May 2022 07:24:29 +0000</pubDate>
+        <pubDate>Wed, 04 May 2022 08:54:48 +0000</pubDate>
 
                 <media:content
                 medium="image"
