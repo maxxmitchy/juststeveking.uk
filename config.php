@@ -29,6 +29,16 @@ return [
             'sort' => '-date',
             'path' => '/talks/{filename}'
         ],
+        'tags' => [
+            'path' => '/blog/tags/{filename}',
+            'articles' => function ($page, $allArticles) {
+                return $allArticles->filter(function ($article) use ($page) {
+                    return $article->tags
+                        ? in_array($page->getFilename(), $article->tags, true)
+                        : false;
+                });
+            },
+        ],
         'sponsors' => [
             'extends' => '_layouts.sponsor',
             'path' => '/sponsors/{filename}',
