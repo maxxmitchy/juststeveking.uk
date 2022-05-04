@@ -56,7 +56,7 @@ Let’s start with our interface/contract, what we need is something specific fo
 
 declare(strict_types=1);
 
-namespace Infrastructure\Blogging\Contracts;
+namespace Infrastructure\Blogging\Commands;
 
 interface CreatePostContract
 {
@@ -107,9 +107,9 @@ namespace Domains\Blogging\Providers;
 use Domains\Blogging\Commands\CreatePost;
 use Domains\Blogging\DataObjects\PostDataObject;
 use Domains\Blogging\Factories\PostDataObjectFactory;
-use Infrastructure\Blogging\Contracts\CreatePostContract;
-use Infrastructure\Blogging\Contracts\PostDataObjectContract;
-use Infrastructure\Blogging\Contracts\PostDataObjectFactoryContract;
+use Infrastructure\Blogging\Commands\CreatePostContract;
+use Infrastructure\Blogging\DataObjects\PostDataObjectContract;
+use Infrastructure\Blogging\Factories\PostDataObjectFactoryContract;
 
 class PostsServiceProvider extends ServiceProvider
 {

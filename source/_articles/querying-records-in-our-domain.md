@@ -26,7 +26,7 @@ Our first query is to lookup a Post record based off of a passed in slug. To do 
 
 declare(strict_types=1);
 
-namespace Infrastructure\Blogging\Contracts;
+namespace Infrastructure\Blogging\Queries;
 
 interface FindPostBySlugContract
 {
@@ -74,10 +74,10 @@ use Domains\Blogging\Commands\CreatePost;
 use Domains\Blogging\Queries\FindPostBySlug;
 use Domains\Blogging\DataObjects\PostDataObject;
 use Domains\Blogging\Factories\PostDataObjectFactory;
-use Infrastructure\Blogging\Contracts\CreatePostContract;
-use Infrastructure\Blogging\Contracts\PostDataObjectContract;
-use Infrastructure\Blogging\Contracts\FindPostBySlugContract;
-use Infrastructure\Blogging\Contracts\PostDataObjectFactoryContract;
+use Infrastructure\Blogging\Commands\CreatePostContract;
+use Infrastructure\Blogging\Queries\FindPostBySlugContract;
+use Infrastructure\Blogging\DataObjects\PostDataObjectContract;
+use Infrastructure\Blogging\Factories\PostDataObjectFactoryContract;
 
 class PostsServiceProvider extends ServiceProvider
 {
