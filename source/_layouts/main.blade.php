@@ -23,7 +23,7 @@
 
         <meta property="og:title" content="{{ $page->title }}">
         <meta property="og:description" content="{{ $page->description }}">
-        <meta property="og:image" content="{{ $page->baseUrl . $page->social_image }}">
+        <meta property="og:image" content="{{ $page->baseUrl . '/assets/images/open-graph-card.png' }}">
         <meta property="og:image:alt" content="{{ $page->social_image_alt }}">
         <meta property="og:locale" content="en_GB">
         <meta property="og:type" content="{{ $page->type ?? 'website' }}">
