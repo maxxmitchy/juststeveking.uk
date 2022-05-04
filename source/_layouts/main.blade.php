@@ -23,8 +23,8 @@
 
         <meta property="og:title" content="{{ $page->title }}">
         <meta property="og:description" content="{{ $page->description }}">
-        <meta property="og:image" content="{{ $page->baseUrl . '/assets/images/open-graph-card.png' }}">
-        <meta property="og:image:alt" content="{{ $page->social_image_alt }}">
+        <meta property="og:image" content="{{ $page->baseUrl }} {{ ! is_null($page->social_image) ? $page->social_image : '/assets/images/open-graph-card.png' }}">
+        <meta property="og:image:alt" content="{{ is_null($page->social_image_alt) ? $page->social_image_alt : 'Open Graph Image for JustSteveKing' }}">
         <meta property="og:locale" content="en_GB">
         <meta property="og:type" content="{{ $page->type ?? 'website' }}">
         <meta property="og:url" content="{{ $page->getUrl() }}">
