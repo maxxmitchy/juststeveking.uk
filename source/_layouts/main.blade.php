@@ -23,7 +23,7 @@
 
         <meta property="og:title" content="{{ $page->title }}">
         <meta property="og:description" content="{{ $page->description }}">
-        <meta property="og:image" content="{{ $page->baseUrl }}'/assets/images/open-graph-card.png'">
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/open-graph-card.png">
         <meta property="og:image:alt" content="{{ is_null($page->social_image_alt) ? $page->social_image_alt : 'Open Graph Image for JustSteveKing' }}">
         <meta property="og:locale" content="en_GB">
         <meta property="og:type" content="{{ $page->type ?? 'website' }}">
@@ -35,7 +35,7 @@
         <meta name="twitter:description" content="{{ $page->description }}">
         <meta name="twitter:site" content="{{ $page->twitter }}">
         <meta name="twitter:creator" content="{{ $page->twitter }}">
-        <meta name="twitter:image" content="{{ $page->baseUrl }}'/assets/images/open-graph-card.png'">
+        <meta name="twitter:image" content="{{ $page->baseUrl }}/assets/images/open-graph-card.png">
         <meta name="twitter:image:alt" content="{{ $page->social_image_alt }}">
 
         <link rel="canonical" href="{{ $page->getUrl() }}">
