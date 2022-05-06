@@ -11,7 +11,7 @@ tags:
   - tips
 ---
 
-I recently saw an awesome tweet while browsing twitter which introduced this idea of tappable query scopes, and wanted to share it and dig into it a little more. The idea originally came from a PR on the laravel/framework repo in the commends [link](https://github.com/laravel/framework/pull/42111#issuecomment-1116944244).
+I recently saw an awesome tweet while browsing twitter which introduced this idea of tappable query scopes, and wanted to share it and dig into it a little more. The idea originally came from a PR on the laravel/framework repo in the comments [link here](https://github.com/laravel/framework/pull/42111#issuecomment-1116944244).
 
 What is does is allow you to create class based scopes that are invokable, and are called using the tap() method in Laravel, it looks a little like the below:
 
