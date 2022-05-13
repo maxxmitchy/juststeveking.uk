@@ -204,7 +204,7 @@ class Poster
 }
 ```
 
-In the above example we are using the `Poster` class to post using a helper method, which is a more than acceptable way to do this. One popular library that uses this approach is (flysystem)[https://flysystem.thephpleague.com/] by Frank de Jonge. This is most likely the best approach as it requires the least amount of magic, and isn't going to give you IDE warnings. However, if you have a very complicated implementation that you don't want to duplicate methods you can use the `__call()` method:
+In the above example we are using the `Poster` class to post using a helper method, which is a more than acceptable way to do this. One popular library that uses this approach is [flysystem](https://flysystem.thephpleague.com) by Frank de Jonge. This is most likely the best approach as it requires the least amount of magic, and isn't going to give you IDE warnings. However, if you have a very complicated implementation that you don't want to duplicate methods you can use the `__call()` method:
 
 ```php
 class Poster
