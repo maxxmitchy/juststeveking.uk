@@ -14,3 +14,10 @@
     status = 200
       force = true # COMMENT: ensure that we always redirect
       headers = {X-From = "Netlify"}
+    
+[[redirects]]
+    from = "/adaptern-pattern/"
+    to = "/adapter-pattern/"
+    status = 200
+      force = true # COMMENT: ensure that we always redirect
+      headers = {X-From = "Netlify"}
