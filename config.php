@@ -14,9 +14,9 @@ return [
     'type' => 'website',
     'twitter' => '@JustSteveKing',
 
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
-    'author' => '',
+    'title' => 'JustSteveKing',
+    'description' => 'Consultant CTO, Software Engineer, Educator, Community Advocate.',
+    'author' => 'JustSteveKing',
 
 
     'collections' => [
