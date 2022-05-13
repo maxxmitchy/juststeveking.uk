@@ -1,8 +1,8 @@
 ---
 extends: _layouts.post
 section: content
-title: Laravel COmmand Bus
-date: 2022-05-12T11:59:40.513Z
+title: Laravel Command Bus
+date: 2022-05-13T11:59:40.513Z
 description: >-
   In Laravel 5.1 the Command Bus was replaced with Dispatchable Jobs, we can still use them but let us also look at how to add a Command Bus.
 tags:
