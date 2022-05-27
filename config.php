@@ -25,6 +25,15 @@ return [
             'sort' => '-date',
             'path' => '/{filename}'
         ],
+        'series' => [
+            'sort' => '-date',
+            'path' => '/series/{filename}',
+            'articles' => function ($page, $allArticles) {
+                return $allArticles->filter(function ($article) use ($page) {
+                    return $article->series === $page->getFilename();
+                })->sortBy('series-order');
+            },
+        ],
         'talks' => [
             'sort' => '-date',
             'path' => '/talks/{filename}'
@@ -69,6 +78,11 @@ return [
             'link' => '/blog',
             'text' => 'Articles',
             'title' => 'Recent Articles',
+        ],
+        [
+            'link' => '/series',
+            'text' => 'Series',
+            'title' => 'Articles groups by Series',
         ],
         [
             'link' => '/talks',
