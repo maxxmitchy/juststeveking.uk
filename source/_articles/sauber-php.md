@@ -4,7 +4,7 @@ section: content
 title: Sauber PHP
 date: 2022-05-30T11:59:40.513Z
 description: >-
-  Over the years I have built a lot of SDKs to work with 3rd party APIs. Each time I require the same components, so I decided to create a way to bootstrap this process while still allowing flexibility
+  I have used a lot of different frameworks in my career, from Zend(Laminas) to Yii, Cake to Codeignitor, SlimPHP to Laravel and more. They all have their own way of doing things, and their own selling points and benefits. Some are strict on their PSR (PHP Standards Recommendation) implementation, while others are a little looser. I have also always wanted to dabble with creating my own micro-framework, one that I can use for small APIs that just need something fast thrown together.
 tags:
   - php
   - psr
